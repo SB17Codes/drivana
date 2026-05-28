@@ -1,0 +1,29 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardFrBg" x1="72" y1="76" x2="434" y2="429" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9ADBC7"/>
+      <stop offset="0.52" stop-color="#5FAE98"/>
+      <stop offset="1" stop-color="#25594F"/>
+    </linearGradient>
+    <linearGradient id="cardFrInner" x1="144" y1="140" x2="365" y2="364" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10110F"/>
+      <stop offset="1" stop-color="#252720"/>
+    </linearGradient>
+    <filter id="cardFrShadow" x="28" y="30" width="456" height="456" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="26" stdDeviation="24" flood-color="#000000" flood-opacity="0.44"/>
+    </filter>
+    <filter id="cardFrGlow" x="40" y="43" width="430" height="430" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+  <g filter="url(#cardFrShadow)">
+    <rect x="76" y="70" width="360" height="360" rx="62" fill="url(#cardFrBg)"/>
+    <rect x="96" y="90" width="320" height="320" rx="48" stroke="#F7F4EB" stroke-opacity="0.18" stroke-width="2"/>
+    <path d="M129 167C129 146.013 146.013 129 167 129H345C365.987 129 383 146.013 383 167V345C383 365.987 365.987 383 345 383H167C146.013 383 129 365.987 129 345V167Z" fill="url(#cardFrInner)"/>
+    <path d="M161 189C161 173.536 173.536 161 189 161H323C338.464 161 351 173.536 351 189V323C351 338.464 338.464 351 323 351H189C173.536 351 161 338.464 161 323V189Z" fill="#91D3BD"/>
+    <path d="M174 202C174 186.536 186.536 174 202 174H310C325.464 174 338 186.536 338 202V310C338 325.464 325.464 338 310 338H202C186.536 338 174 325.464 174 310V202Z" stroke="#0E0E0D" stroke-opacity="0.22" stroke-width="2"/>
+    <text x="256" y="278" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="78" font-weight="800" fill="#0E0E0D" letter-spacing="-1">FR</text>
+  </g>
+  <rect x="75" y="70" width="361" height="360" rx="62" stroke="#0E0E0D" stroke-opacity="0.16" stroke-width="2"/>
+  <path filter="url(#cardFrGlow)" d="M113 111C163 82 245 83 305 91" stroke="#F7F4EB" stroke-opacity="0.23" stroke-width="7" stroke-linecap="round"/>
+</svg>

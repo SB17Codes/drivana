@@ -229,17 +229,34 @@ function ServicesSection() {
 }
 
 function ProofSection() {
+  const floatingCards = [
+    {
+      className: "collab-image--one",
+      src: "/images/floating-cards/card-minus-3.svg",
+      alt: "Badge véhicule moins de 3 ans",
+    },
+    {
+      className: "collab-image--two",
+      src: "/images/floating-cards/card-fr.svg",
+      alt: "Badge France",
+    },
+    {
+      className: "collab-image--three",
+      src: "/images/floating-cards/card-dz.svg",
+      alt: "Badge Algérie",
+    },
+  ];
+
   return (
     <section className="collab-section" id="proof">
-      <div className="collab-image collab-image--one" aria-hidden="true">
-        <span>-3</span>
-      </div>
-      <div className="collab-image collab-image--two" aria-hidden="true">
-        <span>FR</span>
-      </div>
-      <div className="collab-image collab-image--three" aria-hidden="true">
-        <span>DZ</span>
-      </div>
+      {floatingCards.map((card) => (
+        <img
+          className={`collab-image ${card.className}`}
+          src={card.src}
+          alt={card.alt}
+          key={card.src}
+        />
+      ))}
       <div className="collab-copy">
         <h2>Un poste de contrôle pour votre achat en France.</h2>
         <p>

@@ -723,45 +723,34 @@ img {
 
 .collab-image {
   position: absolute;
-  display: grid;
   width: clamp(7rem, 14vw, 13rem);
   aspect-ratio: 1.12;
-  place-items: center;
-  border-radius: 1rem;
-  color: var(--background);
-  font-size: clamp(1.4rem, 3vw, 2.5rem);
-  font-weight: 800;
-  transform: rotate(var(--rotate));
+  object-fit: contain;
+  transform: rotate(var(--rotate)) translate3d(0, 0, 0);
+  transform-origin: center;
+  animation: floatingBadge 6.6s ease-in-out infinite;
+  filter: drop-shadow(0 26px 24px rgba(0, 0, 0, 0.24));
 }
 
 .collab-image--one {
   --rotate: -8deg;
   top: 14%;
   left: 11%;
-  background: var(--lime);
+  animation-delay: 0ms;
 }
 
 .collab-image--two {
   --rotate: 7deg;
   top: 20%;
   right: 13%;
-  background: var(--mint);
+  animation-delay: 420ms;
 }
 
 .collab-image--three {
   --rotate: -3deg;
   right: 24%;
   bottom: 11%;
-  background: var(--gold);
-}
-
-.collab-image span {
-  display: grid;
-  width: 62%;
-  aspect-ratio: 1;
-  place-items: center;
-  border: 0.5rem solid var(--background);
-  border-radius: 0.45rem;
+  animation-delay: 840ms;
 }
 
 .footer-section {
@@ -989,6 +978,18 @@ img {
   70%,
   100% {
     transform: translateX(480%) skewX(-18deg);
+  }
+}
+
+@keyframes floatingBadge {
+  0%,
+  100% {
+    transform: rotate(var(--rotate)) translate3d(0, 0, 0) scale(1);
+  }
+
+  50% {
+    transform: rotate(calc(var(--rotate) * -0.45)) translate3d(0, -0.85rem, 0)
+      scale(1.035);
   }
 }
 
