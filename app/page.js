@@ -23,22 +23,19 @@ const cars = [
   {
     model: "Compacte française récente",
     age: "2024 · France",
-    image:
-      "https://images.unsplash.com/photo-1617814076668-49c95d3de076?auto=format&fit=crop&w=1200&q=85",
+    image: "/images/drivana-compact.png",
     copy: "Cible type Peugeot 308, Renault Mégane ou équivalent, avec historique et origine à contrôler.",
   },
   {
     model: "SUV urbain -3 ans",
     age: "2023 · France",
-    image:
-      "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1200&q=85",
+    image: "/images/drivana-suv.png",
     copy: "Cible type Captur, 2008 ou C3 Aircross, utile quand entretien, kilométrage et vendeur sont traçables.",
   },
   {
     model: "Familiale française récente",
     age: "2024 · France",
-    image:
-      "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1200&q=85",
+    image: "/images/drivana-family.png",
     copy: "Cible type C5 Aircross, 3008 ou Austral, à analyser avec coût global, conformité et disponibilité.",
   },
 ];
@@ -96,9 +93,11 @@ function HeroBoard() {
     <div className="hero-board magnetic" aria-label="Aperçu Drivana">
       <img
         className="hero-car"
-        src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1800&q=85"
-        alt="Voiture récente sur route"
+        src="/images/drivana-hero.png"
+        alt="Voiture récente sur une route entre la France et la Méditerranée"
       />
+      <div className="hero-light" aria-hidden="true" />
+      <div className="route-scan" aria-hidden="true" />
       <div className="board-top">
         <span>France</span>
         <span>Recherche · vérification · export</span>
@@ -129,6 +128,10 @@ function HeroBoard() {
           <span />
           Budget global en préparation
         </p>
+      </div>
+      <div className="board-metrics" aria-label="Indicateurs Drivana">
+        <span>98%</span>
+        <small>Dossier pré-contrôlé</small>
       </div>
     </div>
   );
@@ -180,10 +183,15 @@ function CarsSection() {
         </h2>
       </div>
       <div className="work-rail">
-        {cars.map((car) => (
-          <article className="work-card magnetic" key={car.model}>
+        {cars.map((car, index) => (
+          <article
+            className="work-card magnetic"
+            key={car.model}
+            style={{ "--delay": `${index * 120}ms` }}
+          >
             <div className="work-card__visual">
               <img src={car.image} alt={`${car.model} récente en France`} />
+              <span className="card-shine" aria-hidden="true" />
             </div>
             <p>{car.age}</p>
             <h3>{car.model}</h3>
