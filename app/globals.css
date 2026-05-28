@@ -723,13 +723,15 @@ img {
 
 .collab-image {
   position: absolute;
-  width: clamp(8.5rem, 15vw, 14.5rem);
-  aspect-ratio: 1.12;
+  width: clamp(9.2rem, 16vw, 15.5rem);
+  aspect-ratio: 1;
+  border-radius: 1.25rem;
   object-fit: contain;
+  mix-blend-mode: screen;
   transform: rotate(var(--rotate)) translate3d(0, 0, 0);
   transform-origin: center;
   animation: floatingBadge 6.6s ease-in-out infinite;
-  filter: drop-shadow(0 26px 24px rgba(0, 0, 0, 0.24));
+  filter: drop-shadow(0 30px 28px rgba(0, 0, 0, 0.34));
 }
 
 .collab-image--one {
@@ -1131,8 +1133,8 @@ img {
   }
 
   .collab-image {
-    width: clamp(8rem, 34vw, 11rem);
-    opacity: 0.62;
+    width: clamp(8rem, 35vw, 11.5rem);
+    opacity: 0.78;
   }
 
   .collab-image--one {

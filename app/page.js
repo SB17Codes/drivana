@@ -232,17 +232,17 @@ function ProofSection() {
   const floatingCards = [
     {
       className: "collab-image--one",
-      src: "/images/floating-cards/card-minus-3.svg",
+      src: "/images/floating-cards/recent-vehicle-badge.png",
       alt: "Badge véhicule moins de 3 ans",
     },
     {
       className: "collab-image--two",
-      src: "/images/floating-cards/card-fr.svg",
+      src: "/images/floating-cards/france-sourcing-badge.png",
       alt: "Badge France",
     },
     {
       className: "collab-image--three",
-      src: "/images/floating-cards/card-dz.svg",
+      src: "/images/floating-cards/algeria-arrival-badge.png",
       alt: "Badge Algérie",
     },
   ];
