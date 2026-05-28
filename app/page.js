@@ -56,10 +56,26 @@ const services = [
 ];
 
 const process = [
-  "Critères reçus",
-  "Annonces filtrées",
-  "Dossier vérifié",
-  "Export coordonné",
+  {
+    step: "01",
+    title: "Recherche",
+    copy: "Shortlist France",
+  },
+  {
+    step: "02",
+    title: "Contrôle",
+    copy: "Vendeur + documents",
+  },
+  {
+    step: "03",
+    title: "Décision",
+    copy: "Budget global",
+  },
+  {
+    step: "04",
+    title: "Coordination",
+    copy: "Export guidé",
+  },
 ];
 
 function Brand() {
@@ -103,9 +119,14 @@ function HeroBoard() {
         <span>Recherche · vérification · export</span>
         <span>Algérie</span>
       </div>
-      <div className="journey-line" aria-hidden="true">
-        {process.map((step) => (
-          <span key={step} />
+      <div className="route-panel" aria-label="Étapes Drivana">
+        <div className="route-line" aria-hidden="true" />
+        {process.map((item) => (
+          <article className="route-step" key={item.step}>
+            <span>{item.step}</span>
+            <strong>{item.title}</strong>
+            <small>{item.copy}</small>
+          </article>
         ))}
       </div>
       <div className="boarding-card">
