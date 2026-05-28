@@ -723,7 +723,7 @@ img {
 
 .collab-image {
   position: absolute;
-  width: clamp(7rem, 14vw, 13rem);
+  width: clamp(8.5rem, 15vw, 14.5rem);
   aspect-ratio: 1.12;
   object-fit: contain;
   transform: rotate(var(--rotate)) translate3d(0, 0, 0);
@@ -734,22 +734,22 @@ img {
 
 .collab-image--one {
   --rotate: -8deg;
-  top: 14%;
-  left: 11%;
+  top: 11%;
+  left: 9%;
   animation-delay: 0ms;
 }
 
 .collab-image--two {
   --rotate: 7deg;
-  top: 20%;
-  right: 13%;
+  top: 17%;
+  right: 11%;
   animation-delay: 420ms;
 }
 
 .collab-image--three {
   --rotate: -3deg;
-  right: 24%;
-  bottom: 11%;
+  right: 22%;
+  bottom: 9%;
   animation-delay: 840ms;
 }
 
@@ -1131,7 +1131,23 @@ img {
   }
 
   .collab-image {
-    opacity: 0.34;
+    width: clamp(8rem, 34vw, 11rem);
+    opacity: 0.62;
+  }
+
+  .collab-image--one {
+    top: 7%;
+    left: 4%;
+  }
+
+  .collab-image--two {
+    top: 12%;
+    right: 2%;
+  }
+
+  .collab-image--three {
+    right: 19%;
+    bottom: 5%;
   }
 
   .footer-cta {

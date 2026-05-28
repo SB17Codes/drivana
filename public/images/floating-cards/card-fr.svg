@@ -1,29 +1,29 @@
-<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="560" height="560" viewBox="0 0 560 560" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="cardFrBg" x1="72" y1="76" x2="434" y2="429" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#9ADBC7"/>
-      <stop offset="0.52" stop-color="#5FAE98"/>
-      <stop offset="1" stop-color="#25594F"/>
+    <linearGradient id="frShell" x1="91" y1="85" x2="468" y2="462" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B8F0DE"/>
+      <stop offset="0.5" stop-color="#91D3BD"/>
+      <stop offset="1" stop-color="#2E695D"/>
     </linearGradient>
-    <linearGradient id="cardFrInner" x1="144" y1="140" x2="365" y2="364" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#10110F"/>
-      <stop offset="1" stop-color="#252720"/>
+    <linearGradient id="frSky" x1="170" y1="153" x2="393" y2="399" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7F4EB"/>
+      <stop offset="1" stop-color="#B8E4D7"/>
     </linearGradient>
-    <filter id="cardFrShadow" x="28" y="30" width="456" height="456" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="26" stdDeviation="24" flood-color="#000000" flood-opacity="0.44"/>
-    </filter>
-    <filter id="cardFrGlow" x="40" y="43" width="430" height="430" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feGaussianBlur stdDeviation="4"/>
+    <filter id="frShadow" x="36" y="44" width="488" height="488" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="28" stdDeviation="26" flood-color="#000000" flood-opacity="0.48"/>
     </filter>
   </defs>
-  <g filter="url(#cardFrShadow)">
-    <rect x="76" y="70" width="360" height="360" rx="62" fill="url(#cardFrBg)"/>
-    <rect x="96" y="90" width="320" height="320" rx="48" stroke="#F7F4EB" stroke-opacity="0.18" stroke-width="2"/>
-    <path d="M129 167C129 146.013 146.013 129 167 129H345C365.987 129 383 146.013 383 167V345C383 365.987 365.987 383 345 383H167C146.013 383 129 365.987 129 345V167Z" fill="url(#cardFrInner)"/>
-    <path d="M161 189C161 173.536 173.536 161 189 161H323C338.464 161 351 173.536 351 189V323C351 338.464 338.464 351 323 351H189C173.536 351 161 338.464 161 323V189Z" fill="#91D3BD"/>
-    <path d="M174 202C174 186.536 186.536 174 202 174H310C325.464 174 338 186.536 338 202V310C338 325.464 325.464 338 310 338H202C186.536 338 174 325.464 174 310V202Z" stroke="#0E0E0D" stroke-opacity="0.22" stroke-width="2"/>
-    <text x="256" y="278" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="78" font-weight="800" fill="#0E0E0D" letter-spacing="-1">FR</text>
+  <g filter="url(#frShadow)">
+    <path d="M96 181C96 137.37 137.37 96 181 96H379C422.63 96 464 137.37 464 181V379C464 422.63 422.63 464 379 464H181C137.37 464 96 422.63 96 379V181Z" fill="url(#frShell)"/>
+    <path d="M134 212C134 168.922 168.922 134 212 134H348C391.078 134 426 168.922 426 212V348C426 391.078 391.078 426 348 426H212C168.922 426 134 391.078 134 348V212Z" fill="#11130F" fill-opacity="0.94"/>
+    <path d="M164 227C164 192.206 192.206 164 227 164H333C367.794 164 396 192.206 396 227V333C396 367.794 367.794 396 333 396H227C192.206 396 164 367.794 164 333V227Z" fill="url(#frSky)"/>
+    <path d="M206 356H354" stroke="#11130F" stroke-width="17" stroke-linecap="round"/>
+    <path d="M248 356L280 207L312 356" stroke="#11130F" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M238 275H322" stroke="#11130F" stroke-width="12" stroke-linecap="round"/>
+    <path d="M223 319H337" stroke="#11130F" stroke-width="12" stroke-linecap="round"/>
+    <path d="M216 197L187 219L216 241" stroke="#0066B3" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M344 197L373 219L344 241" stroke="#EF4135" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M187 219H373" stroke="#F7F4EB" stroke-width="10" stroke-linecap="round"/>
+    <path d="M160 160L400 400" stroke="#FFFFFF" stroke-opacity="0.23" stroke-width="3"/>
   </g>
-  <rect x="75" y="70" width="361" height="360" rx="62" stroke="#0E0E0D" stroke-opacity="0.16" stroke-width="2"/>
-  <path filter="url(#cardFrGlow)" d="M113 111C163 82 245 83 305 91" stroke="#F7F4EB" stroke-opacity="0.23" stroke-width="7" stroke-linecap="round"/>
 </svg>
